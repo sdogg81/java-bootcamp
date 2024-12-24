@@ -1,4 +1,4 @@
-package session1.primitiveTypes;
+package session1.II_primitiveTypes;
 
 public class FirstVariables {
 

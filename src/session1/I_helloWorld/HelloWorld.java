@@ -1,4 +1,4 @@
-package session1.helloWorld;
+package session1.I_helloWorld;
 
 public class HelloWorld {
     public static void main(String[] args) {

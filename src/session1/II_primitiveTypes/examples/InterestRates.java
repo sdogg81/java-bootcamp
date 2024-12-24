@@ -1,4 +1,4 @@
-package session1.primitiveTypes.examples;
+package session1.II_primitiveTypes.examples;
 
 /**
  * Zinsen berechnen als Beispiel für den Umgang mit Variablen und deren Ausgabe:
