@@ -3,7 +3,7 @@ package session1.II_primitiveTypes;
 public class FirstVariables {
 
     /**
-     * erste Variablen erstellen und verschiedene Arten von Deklaration und Initialisierung aufzeigen:
+     * Erste Variablen erstellen und verschiedene Arten von Deklaration und Initialisierung aufzeigen:
      */
     public static void main(String[] args) {
         /*
