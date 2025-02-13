@@ -52,11 +52,11 @@ public class Zoo {
         quacki.setLaut("Quak");
         quacki.setGewicht(0.250);
 
-        System.out.println("Der Hund " + waldi.getName() + "hat ein Fell, das " + waldi.getFellFarbe() + " ist. Er wiegt " + waldi.getGewicht() + " Pfund und macht " + waldi.gibLaut() + ".");
-        System.out.println("Der Hund " + bello.getName() + "hat ein Fell, das " + bello.getFellFarbe() + " ist. Er wiegt " + bello.getGewicht() + " Pfund und macht " + bello.gibLaut() + ".");
-        System.out.println("Die Katze " + katti.getName() + "hat ein Fell, das " + katti.getFellFarbe() + " ist. Sie wiegt " + katti.getGewicht() + " Pfund und macht " + katti.gibLaut() + ".");
-        System.out.println("Der Kater " + robert.getName() + "hat ein Fell, das " + robert.getFellFarbe() + " ist. Er wiegt " + robert.getGewicht() + " Pfund und macht " + robert.gibLaut() + ".");
-        System.out.println("Die Maus " + mausi.getName() + "hat ein Fell, das " + mausi.getFellFarbe() + " ist. Sie wiegt " + mausi.getGewicht() + " Pfund und macht " + mausi.gibLaut() + ".");
+        System.out.println("Der Hund " + waldi.getName() + " hat ein Fell, das " + waldi.getFellFarbe() + " ist. Er wiegt " + waldi.getGewicht() + " Pfund und macht " + waldi.gibLaut() + ".");
+        System.out.println("Der Hund " + bello.getName() + " hat ein Fell, das " + bello.getFellFarbe() + " ist. Er wiegt " + bello.getGewicht() + " Pfund und macht " + bello.gibLaut() + ".");
+        System.out.println("Die Katze " + katti.getName() + " hat ein Fell, das " + katti.getFellFarbe() + " ist. Sie wiegt " + katti.getGewicht() + " Pfund und macht " + katti.gibLaut() + ".");
+        System.out.println("Der Kater " + robert.getName() + " hat ein Fell, das " + robert.getFellFarbe() + " ist. Er wiegt " + robert.getGewicht() + " Pfund und macht " + robert.gibLaut() + ".");
+        System.out.println("Die Maus " + mausi.getName() + " hat ein Fell, das " + mausi.getFellFarbe() + " ist. Sie wiegt " + mausi.getGewicht() + " Pfund und macht " + mausi.gibLaut() + ".");
         System.out.println("Die Ente " + quacki.getName() + " wiegt " + quacki.getGewicht() + " Pfund und macht " + quacki.gibLaut() + ".");
 
 
