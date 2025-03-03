@@ -1,19 +1,25 @@
 package session3;
 
 public class Tier {
+    private Tierart tierart;
     private String name;
     private int beine;
     private String laut = "";
     private double gewicht;
 
-    public Tier() {
-
-    }
-
-    public Tier(String name, double gewicht, String laut) {
+    public Tier(Tierart tierart, String name, double gewicht, String laut) {
+        this.tierart = tierart;
         this.name = name;
         this.gewicht = gewicht;
         this.laut = laut;
+    }
+
+    public Tierart getTierart() {
+        return tierart;
+    }
+
+    public void setTierart(Tierart tierart) {
+        this.tierart = tierart;
     }
 
     public String getName() {

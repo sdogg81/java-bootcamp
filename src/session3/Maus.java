@@ -1,11 +1,10 @@
 package session3;
 
 /**
- *  Die KLasse "Maus" repräsentiert ganz allgemein eine Maus.
- *
+ * Die KLasse "Maus" repräsentiert ganz allgemein eine Maus.
  */
 public class Maus extends Saeugetier {
     public Maus(String name, double gewicht) {
-        super(name, gewicht, "PIEP");
+        super(Tierart.Maus, name, gewicht, "PIEP");
     }
 }

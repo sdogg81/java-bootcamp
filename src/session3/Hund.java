@@ -9,12 +9,8 @@ public class Hund extends Saeugetier {
 
     private boolean kampfhund = true;
 
-
-    public Hund(){
-
-    }
     public Hund(String name){
-        super(name, 0, "WAU");
+        super(Tierart.Hund, name, 0, "WAU");
         Random rnd = new Random();
         this.setGewicht(rnd.nextDouble(100) + 10);
     }

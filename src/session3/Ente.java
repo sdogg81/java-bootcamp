@@ -6,6 +6,6 @@ package session3;
  */
 public class Ente extends Tier {
     public Ente(String name, double gewicht) {
-        super(name, gewicht, "QUAK");
+        super(Tierart.Ente, name, gewicht, "QUAK");
     }
 }

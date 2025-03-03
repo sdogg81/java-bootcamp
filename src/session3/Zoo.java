@@ -1,5 +1,7 @@
 package session3;
 
+import java.util.ArrayList;
+
 /**
  *  Die KLasse Zoo repräsentiert unseren kleinen virtuellen Tierpark.
  *  Sie ist der Einsprungspunkt für unser Programm, weil sie die main()-Methode enthält.
@@ -17,9 +19,7 @@ public class Zoo {
             Diese Variable muss mit dem passenden Typ (Name der Klasse) deklariert werden, damit im Arbeitsspeicher
             entsprechend viel Platz belegt wird.
          */
-        Hund bello = new Hund();
-        bello.setLaut("WOUH");
-        bello.setGewicht(73.5);
+        Hund bello = new Hund("Bello");
         bello.setFellFarbe("schwarz");
         bello.setKampfhund(true);
 
@@ -36,13 +36,19 @@ public class Zoo {
 
         Ente quacki = new Ente("Quacki", 0.25);
 
-        System.out.println("Der Hund " + waldi.getName() + " hat ein Fell, das " + waldi.getFellFarbe() + " ist. Er wiegt " + waldi.getGewicht() + " Pfund und macht " + waldi.gibLaut() + ".");
-        System.out.println("Der Hund " + bello.getName() + " hat ein Fell, das " + bello.getFellFarbe() + " ist. Er wiegt " + bello.getGewicht() + " Pfund und macht " + bello.gibLaut() + ".");
-        System.out.println("Die Katze " + katti.getName() + " hat ein Fell, das " + katti.getFellFarbe() + " ist. Sie wiegt " + katti.getGewicht() + " Pfund und macht " + katti.gibLaut() + ".");
-        System.out.println("Der Kater " + robert.getName() + " hat ein Fell, das " + robert.getFellFarbe() + " ist. Er wiegt " + robert.getGewicht() + " Pfund und macht " + robert.gibLaut() + ".");
-        System.out.println("Die Maus " + mausi.getName() + " hat ein Fell, das " + mausi.getFellFarbe() + " ist. Sie wiegt " + mausi.getGewicht() + " Pfund und macht " + mausi.gibLaut() + ".");
-        System.out.println("Die Ente " + quacki.getName() + " wiegt " + quacki.getGewicht() + " Pfund und macht " + quacki.gibLaut() + ".");
+        Gehege friedeFreudeEierkuchenGehege = new Gehege(150);
+        friedeFreudeEierkuchenGehege.add(bello);
+        friedeFreudeEierkuchenGehege.add(waldi);
+        friedeFreudeEierkuchenGehege.add(katti);
+        friedeFreudeEierkuchenGehege.add(robert);
+        friedeFreudeEierkuchenGehege.add(mausi);
+        friedeFreudeEierkuchenGehege.add(quacki);
 
+        Gehege raubtierGehege = new Gehege(50);
+        Loewe leon = new Loewe("Leon", 100, "GRRRR");
+        raubtierGehege.add(leon);
 
+        friedeFreudeEierkuchenGehege.beschreibung();
+        raubtierGehege.beschreibung();
     }
 }
