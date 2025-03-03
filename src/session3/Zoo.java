@@ -18,39 +18,23 @@ public class Zoo {
             entsprechend viel Platz belegt wird.
          */
         Hund bello = new Hund();
-        bello.setName("Bello");
         bello.setLaut("WOUH");
         bello.setGewicht(73.5);
         bello.setFellFarbe("schwarz");
         bello.setKampfhund(true);
 
-        Hund waldi = new Hund();
-        waldi.setName("Waldi");
-        waldi.setLaut("Wiff");
-        waldi.setGewicht(25.5);
+        Hund waldi = new Hund("Waldi");
         waldi.setFellFarbe("braun");
         waldi.setKampfhund(false);
 
-        Katze katti = new Katze();
-        katti.setName("Katti");
-        katti.setLaut("Miau");
-        katti.setGewicht(12);
+        Katze katti = new Katze("Katti", 12);
 
-        Katze robert = new Katze();
-        robert.setName("Robert");
-        robert.setLaut("Miiiiiauuuuu");
-        robert.setGewicht(11);
+        Katze robert = new Katze("Robert", 11);
 
-        Maus mausi = new Maus();
-        mausi.setName("Mausi");
+        Maus mausi = new Maus("Mausi", 0.1);
         mausi.setFellFarbe("weiß");
-        mausi.setLaut("Piep");
-        mausi.setGewicht(0.1);
 
-        Ente quacki = new Ente();
-        quacki.setName("Quacki");
-        quacki.setLaut("Quak");
-        quacki.setGewicht(0.250);
+        Ente quacki = new Ente("Quacki", 0.25);
 
         System.out.println("Der Hund " + waldi.getName() + " hat ein Fell, das " + waldi.getFellFarbe() + " ist. Er wiegt " + waldi.getGewicht() + " Pfund und macht " + waldi.gibLaut() + ".");
         System.out.println("Der Hund " + bello.getName() + " hat ein Fell, das " + bello.getFellFarbe() + " ist. Er wiegt " + bello.getGewicht() + " Pfund und macht " + bello.gibLaut() + ".");

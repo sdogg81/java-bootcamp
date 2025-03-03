@@ -29,5 +29,9 @@ public class OperatorExample {
         System.out.println("Ist zahl1 größer als 5 UND zahl2 größer als 15? " + istGroesser);
         System.out.println("Ist zahl1 größer als 15 ODER zahl2 größer als 15? " + istEinesWahr);
         System.out.println("Ist zahl1 NICHT größer als zahl2? " + istNichtWahr);
+
+        boolean expression = !(istGroesser && (istEinesWahr || istNichtWahr));
+        System.out.println(expression);
+
     }
 }
