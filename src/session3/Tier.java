@@ -18,7 +18,7 @@ public class Tier {
         return tierart;
     }
 
-    public void setTierart(Tierart tierart) {
+    public void setTieratimrt(Tierart tierart) {
         this.tierart = tierart;
     }
 
