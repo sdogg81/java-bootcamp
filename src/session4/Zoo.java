@@ -1,7 +1,14 @@
 package session4;
 
+
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class Zoo {
-    public static void main(String[] args){
+    private static Logger logger = LogManager.getLogger(Zoo.class);
+
+    public static void main(String[] args) {
         Loewe loewe = new Loewe();
         loewe.gibLaut();
         loewe.beschreiben();
@@ -35,6 +42,7 @@ public class Zoo {
         eierLegerGehege.addTier(moewe);
         eierLegerGehege.beschreiben();
 
+        Moewe moewe2 = new Moewe();
 
         System.out.println(schnabeltier.eierLegen());
 
@@ -45,5 +53,19 @@ public class Zoo {
 
         nest.setTierImNest(schnabeltier);
         nest.eierZaehlen();
+
+        Loewe clarence = new Loewe();
+
+        Zoowaerter karl = new Zoowaerter();
+        karl.setGehege(loewenGehege);
+
+        try {
+            karl.removeTier(clarence);
+        }
+        catch (AnimalNotFoundException anf){
+            logger.log(Level.ERROR, "Dieser Löwe ist gar nicht in diesem Gehege. Hast du Lack gesoffen?");
+        }
+
+        System.out.println("Auf Wiedersehen in unserem schönen Zoo!");
     }
 }

@@ -22,12 +22,12 @@ public class Gehege<T> {
         this.tiere = tiere;
     }
 
-    public void removeTier(T tier){
+    public void removeTier(T tier) throws AnimalNotFoundException {
         if(this.tiere.contains(tier)){
             this.tiere.remove(tier);
         }
         else{
-            System.out.println("Das Tier befindet sich nicht in diesem Gehege.");
+            throw new AnimalNotFoundException("Dieses Tier ist nicht in diesem Gehege");
         }
     }
 
